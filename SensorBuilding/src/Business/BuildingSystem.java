@@ -4,6 +4,6 @@ package Business;
  *
  * @author Robin
  */
-public class System {
+public class BuildingSystem {
     
 }
