@@ -5,15 +5,19 @@
  */
 package sensorbuilding;
 
+import Interface.IReading;
+import java.util.ArrayList;
+
 /**
  *
  * @author AskeWulf
  */
-public class Reading {
+public class Reading implements IReading{
     private String time;
     private String value;
     private String type;
     private String ID;
+    private ArrayList<Sensors> senors;
     
     Reading(String time, String value, String type, String ID) {
         this.time = time;
