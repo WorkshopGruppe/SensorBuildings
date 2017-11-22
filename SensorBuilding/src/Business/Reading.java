@@ -10,5 +10,5 @@ package Business;
  * @author Simon
  */
 public class Reading {
-    
+
 }
