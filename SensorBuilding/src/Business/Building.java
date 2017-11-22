@@ -1,12 +1,13 @@
 package Business;
 
+import Interface.IBuilding;
 import java.util.ArrayList;
 
 /**
  *
  * @author Robin
  */
-public class Building {
+public class Building implements IBuilding{
     private String name;
     private String address;
     private ArrayList<Sensor> sensors;
