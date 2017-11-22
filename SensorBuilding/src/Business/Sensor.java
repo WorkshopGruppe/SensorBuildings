@@ -12,9 +12,9 @@ public class Sensor implements ISensor{
     private String ID;
     private ArrayList<Reading> readings;
     
-    Sensor(String ID, String reading){
+    Sensor(String ID, String value){
         this.ID = ID;
-        this.Value = Value;
+        this.Value = value;
         this.readings = new ArrayList<>();
     }
 
