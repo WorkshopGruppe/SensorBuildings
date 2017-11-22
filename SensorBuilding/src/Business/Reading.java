@@ -6,7 +6,6 @@
 package Business;
 
 import Interface.IReading;
-import java.util.ArrayList;
 
 /**
  *
@@ -16,13 +15,11 @@ public class Reading implements IReading{
     private int time;
     private double value;
     private String type;
-    private ArrayList<Sensor> sensors;
     
     Reading(int time, double value, String type) {
         this.time = time;
         this.value = value;
         this.type = type;
-        this.sensors = new ArrayList<>();
     }
 
     public int getTime() {
@@ -36,7 +33,8 @@ public class Reading implements IReading{
     public String getType() {
         return this.type;
     }
-    
+   
+    /*
     public void setTime(int time) {
         this.time = time;
     }
@@ -48,5 +46,5 @@ public class Reading implements IReading{
     public void setType(String type) {
         this.type = type;
     }    
-    
+   */ 
 }

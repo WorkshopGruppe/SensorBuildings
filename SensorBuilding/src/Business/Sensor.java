@@ -8,31 +8,22 @@ import java.util.ArrayList;
  * @author Robin
  */
 public class Sensor implements ISensor{
-    private String Value;
+   // private String Value;
     private String ID;
     private ArrayList<Reading> readings;
     
-    Sensor(String ID, String value){
+    Sensor(String ID){
         this.ID = ID;
-        this.Value = value;
+        //this.Value = value;
         this.readings = new ArrayList<>();
-    }
-
-    public String getValue() {
-        return Value;
     }
 
     public String getID() {
         return ID;
     }
-
-    public void setValue(String Value) {
-        this.Value = Value;
-    }
-
-    public void setID(String ID) {
-        this.ID = ID;
-    }
     
-    
+    public void addReading(int time, double value, String type){
+        Reading reading = new Reading(time, value, type);
+        this.readings.add(reading);
+    }
 }
