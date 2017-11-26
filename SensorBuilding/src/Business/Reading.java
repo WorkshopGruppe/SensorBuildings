@@ -47,4 +47,7 @@ public class Reading implements IReading{
         this.type = type;
     }    
    */ 
+    public String toString(){
+       return "Time: " + time + "\tValue: " + value + "\tType: " + type;
+    }
 }

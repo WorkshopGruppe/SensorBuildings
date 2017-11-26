@@ -37,6 +37,11 @@ public class Building implements IBuilding{
     public void removeSensor(Sensor sensor){
         this.sensors.remove(sensor);
     }
+    public void makeSensor(String id, int time, double value, String type){
+        Sensor s = new Sensor(id);
+        s.addReading(time, value, type);
+        this.sensors.add(s);
+    }
     
     
     

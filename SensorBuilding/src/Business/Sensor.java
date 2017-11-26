@@ -26,4 +26,8 @@ public class Sensor implements ISensor{
         Reading reading = new Reading(time, value, type);
         this.readings.add(reading);
     }
+    
+    public String toString(){
+       return "SensorID: " + ID + "\tReadings: "+ readings.toString() + "\n";
+    }
 }
